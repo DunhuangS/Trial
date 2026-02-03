@@ -12,5 +12,24 @@ public class Main {
         System.out.println(r.getPerimeter());
         System.out.println(r.getArea());
         System.out.println(r);
+
+        int[] bruh = {10, 11, 12, 13, 14, 15};
+        shootMyArray(bruh);
+        printArray(bruh);
+        
+    }
+
+    static void printArray (int[] array) {
+        System.out.print("[ ");
+        for (int e : array) {
+            System.out.print(e + " ");
+        }
+        System.out.print("]");
+    }
+
+    static void shootMyArray (int[] array) {
+        for(int i = 0; i < array.length; i++) {
+            array[i] -= 10;
+        }
     }
 }
